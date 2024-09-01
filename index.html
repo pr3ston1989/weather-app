@@ -8,27 +8,32 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
-    <h1>Weather App</h1>
     <form id="city-search">
         <label for="search"></label>
         <input type="search" name="search" id="search" placeholder="Which city's weather are you looking for?">
         <button type="submit">Search</button>
     </form>
-    
-    <div class="weather-main">
-        <div class="weather-left">
-            <h2>Weather</h2>
-            <h2>Now</h2>
-            <p class="degrees-now">Degrees Now</p>
-            <p>Temperatura odczuwalna</p>
+
+    <label for="scale">Fahrenheit?
+        <input type="checkbox" name="scale" id="scale">
+    </label>
+    <div class="today">
+        <h1 id="location">Weather App</h1>
+        <div class="weather-main">
+            <div class="weather-left">
+                <h2>Weather now</h2>
+                <p id="temp">Degrees Now</p>
+                <p id="feelslike">Feels-like temperature:</p>
+            </div>
+            <div class="weather-right">
+                <p id="conditions">Conditions:</p>
+                <p id="precip">Precip</p>
+                <p id="humidity">Humidity</p>
+                <p id="windspeed">Wind speed:</p>
+            </div>
         </div>
-        <div class="weather-right">
-            <p>Częściowe zachmurzenie</p>
-            <p>Opady w procentach</p>
-            <p>Wilgotność w procentach</p>
-            <p>Wiatr - prędkość</p>
-            <p>Jakość powietrza</p>
-        </div>
+    </div>
+    <div class="next-days">
     </div>
 </body>
 </html>

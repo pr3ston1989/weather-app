@@ -6,7 +6,28 @@ body {
     align-items: center;
 }
 
+.today,
+.days {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 1em;
+    margin: 2em;
+}
+
+.today {
+    padding: 3em;
+}
+
+.days {
+    padding: 1em;
+}
+
+.next-days {
+    display: flex;
+    gap: 1em;
+}
+
 input {
+    margin-top: 3em;
     width: 300px;
 }
 
